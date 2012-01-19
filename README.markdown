@@ -14,7 +14,12 @@ Deploying a Node.js app to Heroku is as simple as this:
 * [Express - node web framework](http://expressjs.com/)
 * [Backbone.js](http://documentcloud.github.com/backbone/)
 
-## 1. Installing Node
+## 1. Install Node
+
+Pre-requisites
+* git
+* bash
+* Xcode, gcc, or other C++ compiler
 
 Install NVM https://github.com/creationix/nvm#readme
 
@@ -34,8 +39,16 @@ Install Node v0.4.7. **Important**: Heroku's Cedar stack supports Node v0.4.7 on
     # v0.4.7
     
 
+## 2. Install Heroku CLI
 
+Pre-requisites:
+* Heroku account - https://api.heroku.com/signup
+* Ruby
 
-  
+Download Heroku CLI
+* http://devcenter.heroku.com/articles/node-js#local_workstation_setup
 
+Login to Heroku. You only have to do this once.
+
+    heroku login
 
