@@ -46,13 +46,49 @@ Install NPM
 ## 2. Install Heroku CLI
 
 Pre-requisites:
+
 * Heroku account - https://api.heroku.com/signup
 * Ruby
 
 Download Heroku CLI
+
 * http://devcenter.heroku.com/articles/node-js#local_workstation_setup
 
 Login to Heroku. You only have to do this once.
 
     heroku login
+
+## 3. Hello Node
+
+Clone Meetup project
+
+    git clone git://github.com/toolbear/easy-breezy-node-heroku.git
+    cd easy-breezy-node-heroku
+
+Install Node modules required for project
+
+    npm install
+
+NPM installs dependencies for our project that are declared in `package.json`. Each time we add a dependency
+to `package.json` we will re-run `npm install`.
+
+Run locally
+
+    foreman start
+    # 16:29:15 web.1     | started with pid 35445
+    # 16:29:15 web.1     | Listening on 5000
+
+Visit [http://localhost:5000/](http://localhost:5000/)
+
+## 4. Review Project Structure
+
+    easy-breezy-node-heroku
+    ├── .git
+    │   ├── ...
+    ├── .gitignore
+    ├── Procfile
+    ├── Procfile
+    ├── README.markdown
+    ├── package.json
+    └── web.js
 
