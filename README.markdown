@@ -127,6 +127,7 @@ Your app!
 Add in `express.static(...)` for static file serving.
 
 Exercise
+
 * Change `Procfile` to point to `web.static.js`
 * restart Foreman and test out locally
 * Change the message displayed and test locally
