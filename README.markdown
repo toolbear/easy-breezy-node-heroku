@@ -80,7 +80,7 @@ Run locally
 
 Visit [http://localhost:5000/](http://localhost:5000/)
 
-## 4. Review Project Structure
+## 4. Review Node.js Project Structure
 
     easy-breezy-node-heroku
     ├── .git
@@ -92,3 +92,33 @@ Visit [http://localhost:5000/](http://localhost:5000/)
     ├── package.json
     └── web.js
 
+### Excercise
+
+* Change "Hello World" to "Hello, {You}", e.g. "Hello, toolbear"
+* Restart `foreman`, see your change locally
+* Commit your changes
+        git add web.js
+        git ci -m 'personalized greeting'
+
+## 5. Deploy!
+
+Create new Heroku app in your account. You do this once per app. **Important**: specifying Cedar is important. The original Heroku stack was Ruby only.
+
+    heroku create --stack cedar
+    # Creating sharp-rain-871... done, stack is cedar
+    # http://sharp-rain-871.herokuapp.com/ | git@heroku.com:sharp-rain-871.git
+    # Git remote heroku added
+    
+Check out the placeholder app:
+
+    heroku open
+
+Deploy your code:
+
+    git push heroku master
+    # ...
+
+Your app!
+
+    heroku open
+    
