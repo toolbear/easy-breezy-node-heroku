@@ -1,0 +1,41 @@
+# Easy, Breezy Node.js Hosting & Deployment
+
+Deploying a Node.js app to Heroku is as simple as this:
+
+    git push heroku master
+
+
+## Resources
+
+* [GitHub](https://github.com/)
+* [NVM (Node Version Manager)](https://github.com/creationix/nvm#readme)
+* [Node](http://nodejs.org/)
+* [Getting Started with Node.js on Heroku/Cedar](http://devcenter.heroku.com/articles/node-js)
+* [Express - node web framework](http://expressjs.com/)
+* [Backbone.js](http://documentcloud.github.com/backbone/)
+
+## 1. Installing Node
+
+Install NVM https://github.com/creationix/nvm#readme
+
+    git clone git://github.com/creationix/nvm.git ~/.nvm
+    
+Add this line to `~/.bashrc` or `~/.profile`
+
+    . ~/.nvm/nvm.sh
+
+Install Node v0.4.7. **Important**: Heroku's Cedar stack supports Node v0.4.7 only; none sooner, none later.
+
+    nvm install v0.4.7
+    # downloads and compiles Node
+    nvm alias default v0.4.7
+    nvm use v0.4.7
+    node --version
+    # v0.4.7
+    
+
+
+
+  
+
+
