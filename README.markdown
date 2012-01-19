@@ -18,6 +18,7 @@ Deploying a Node.js app to Heroku is as simple as this:
 ## 1. Install Node, NVM, and NPM
 
 Pre-requisites
+
 * git
 * bash
 * Xcode, gcc, or other C++ compiler
