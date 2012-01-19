@@ -132,3 +132,42 @@ Exercise
 * restart Foreman and test out locally
 * Change the message displayed and test locally
 * Deploy to heroku
+* test remotely
+
+## 7. REST resource
+
+Exercise
+
+* Change `Procfile` to point to `web.backbone.js`
+* test locally
+* Change mock database, add your user
+* test locally with your user
+* Deploy to heroku
+* test remotely
+
+Testing REST services with `curl`
+
+    # to fetch user with username "toolbear"
+    curl -i http://localhost:5000/user/toolbear
+
+## 8. Debugging remotely
+
+    heroku logs --tail
+    # 2012-01-19T21:45:30+00:00 heroku[api]: Add-on add logging:basic by tim@tool-man.org
+    # 2012-01-19T21:45:30+00:00 heroku[api]: Release v2 created by tim@tool-man.org
+    # 2012-01-19T21:46:22+00:00 heroku[slugc]: Slug compilation started
+    # ...
+
+
+## 9. Have some Backbone.js
+
+Exercise for the reader:
+
+* Add [Backbone.js](http://documentcloud.github.com/backbone/) to `public/js` and `public/login.html`
+* Create User model object
+* Wire up username field to User model
+* Add a view for User object
+* Sync user model with REST resource when username field updated, re-render User view
+* ???
+* Profit!
+
